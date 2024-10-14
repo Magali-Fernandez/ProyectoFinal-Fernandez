@@ -1,0 +1,62 @@
+[
+    {
+        "nombre": "Oso Panda",
+        "precio": 7000,
+        "imagen": "../assets/images/animales/oso panda.jpg"
+    },
+    {
+        "nombre": "Jirafa",
+        "precio": 8600,
+        "imagen": "../assets/images/animales/jirafa.jpg"
+    },
+    {
+        "nombre": "Gato",
+        "precio": 9400,
+        "imagen": "../assets/images/animales/gato.jpg"
+    },
+    {
+        "nombre": "Perro",
+        "precio": 5600,
+        "imagen": "../assets/images/animales/perro.jpg"
+    },
+    {
+        "nombre": "Elefante",
+        "precio": 8600,
+        "imagen": "../assets/images/animales/elefante.jpg"
+    },
+    {
+        "nombre": "Conejo",
+        "precio": 5200,
+        "imagen": "../assets/images/animales/conejo.jpg"
+    },
+    {
+        "nombre": "León",
+        "precio": 7200,
+        "imagen": "../assets/images/animales/leon.jpg"
+    },
+    {
+        "nombre": "Tigre",
+        "precio": 10100,
+        "imagen": "../assets/images/animales/tigre.jpg"
+    },
+    {
+        "nombre": "Dragón",
+        "precio": 12800,
+        "imagen": "../assets/images/animales/dragon.jpg"
+    },
+    {
+        "nombre": "Mono",
+        "precio": 5200,
+        "imagen": "../assets/images/animales/mono.jpg"
+    },
+    {
+        "nombre": "Oveja",
+        "precio": 6000,
+        "imagen": "../assets/images/animales/oveja.jpg"
+    },
+    {
+        "nombre": "Unicornio",
+        "precio": 11400,
+        "imagen": "../assets/images/animales/unicornio.jpg"
+    }
+]

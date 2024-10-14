@@ -1,0 +1,482 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #fff5e1;
+    color: #d3d3d3;
+}
+
+h1,
+h2 {
+    background: linear-gradient(90deg, #d4687a, #bd93b7, #3d898b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+a {
+    color: #87ceeb;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ffc0cb;
+}
+
+/* Navbar */
+
+.navbar {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.navbar-brand {
+    font-family: "Matemasie", system-ui;
+    color: #87ceeb;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: #87ceeb;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Estilo específico para el botón del carrito */
+.carrito-btn {
+    background-color: #b3e5b3;
+    padding: 8px 15px;
+    border-radius: 5px;
+    color: #fff;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.carrito-btn:hover {
+    background-color: #87ceeb;
+    color: #fff;
+}
+
+.carrito-btn:active {
+    transform: scale(0.95);
+    background-color: #87ceeb;
+}
+
+/* Sección Hero */
+.hero {
+    background-image: url("../assets/images/fondo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: linear-gradient(to right, #ffc0cb, #87ceeb);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 100px 0;
+    color: #f0e6e6;
+    padding-top: 100px;
+    margin-top: 2rem;
+}
+
+.hero .lead {
+    font-size: 1.5rem;
+}
+
+.hero h1 {
+    color: #538ba1fa;
+    font-size: 3.5rem;
+    background: linear-gradient(90deg, #ff6b81, #ffcccb, #3d898b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    -webkit-text-stroke: 1px black;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.hero p {
+    background: linear-gradient(90deg, #d4687a, #bd93b7, #3d898b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 1.2rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Productos */
+.productos .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 1.5rem;
+}
+
+.productos .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+    max-width: 390px;
+    max-height: 600px;
+    margin: 15px auto;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+h5 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+.card-title {
+    margin-bottom: 0;
+}
+
+/* Estilo para la lista de detalle de la compra */
+.imagen-producto {
+    width: 50px;
+    height: auto;
+}
+
+/* Estilo para los botones "Agregar al carrito" */
+.add-to-cart-btn {
+    width: auto;
+    padding: 8px 16px;
+    margin-top: 10px;
+    background-color: #87ceeb;
+    border-color: #87ceeb;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #b3e5b3;
+    border-color: #b3e5b3;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card p {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 5px;
+}
+
+/* Estilo para la sección de contacto */
+.contacto {
+    background-color: #fff5e1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contacto:hover {
+    background-color: #ffebe8;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.contact-info {
+    background-color: #87ceeb;
+    color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.infoContacto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2.8rem;
+}
+
+.contact-info h4 {
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    padding: 5px;
+    margin: 10px 0;
+}
+
+.contact-info i {
+    margin-right: 10px;
+}
+
+form .form-control {
+    border-radius: 5px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+form .form-control:focus {
+    box-shadow: 0 0 5px rgba(135, 206, 235, 0.5);
+}
+
+form .form-label {
+    background: linear-gradient(90deg, #d4687a, #bd93b7, #3d898b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary {
+    background-color: #87ceeb;
+    border-color: #87ceeb;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.buttonForm {
+    margin: 10px 0px;
+}
+
+.btn-primary:hover {
+    background-color: #b3e5b3;
+    border-color: #b3e5b3;
+}
+
+/* Footer */
+footer {
+    background-color: #d3d3d3;
+    color: #333;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer a {
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+footer:hover {
+    background-color: #b3e5b3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Sidebar del carrito */
+.sidebar {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    background: #fff5e1;
+    color: #333;
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: none;
+    z-index: 1000;
+    overflow-y: auto;
+    border-radius: 8px 0 0 8px;
+}
+
+.sidebar.show {
+    display: block;
+}
+
+#carrito-list {
+    list-style: none;
+    padding: 0;
+}
+
+#carrito-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+#carrito-list li .remove-btn {
+    background: none;
+    border: none;
+    color: #dc3545;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+#carrito-list li .remove-btn:hover {
+    color: #c82333;
+}
+
+#total-price {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#close-cart {
+    margin-top: 20px;
+    background-color: #6c757d;
+    color: #fff;
+    border: none;
+}
+
+#close-cart:hover {
+    background-color: #5a6268;
+}
+
+#buy-cart {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+/* Estilo personalizado para el modal */
+.modal-content {
+    border-radius: 8px;
+    background-color: #fff5e1;
+    padding: 20px;
+}
+
+.modal-header {
+    background-color: #007bff;
+    color: white;
+}
+
+.modal-body ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.modal-body ul li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.modal-body img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.modal-footer {
+    justify-content: flex-end;
+}
+
+#compra-detalles-list {
+    color: #333;
+}
+
+#compra-total {
+    background: linear-gradient(90deg, #d4687a, #bd93b7, #3d898b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Estilo para la notificación */
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #4ed16d;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 1000;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.oculto {
+    display: none;
+}
+
+/* Estilo para el botón flotante del carrito */
+#floating-cart-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #87ceeb;
+    color: #fff;
+    border-radius: 50%;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 30px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+#floating-cart-btn:hover {
+    background-color: #ffc0cb;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1);
+    color: #f7eeee;
+}
+
+/* Estilos para el contador del carrito */
+.cart-count {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 7px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Estilo específico para el ícono en el navbar */
+.navbar .cart-count {
+    top: -8px;
+    right: -8px;
+}
+
+/* Estilo específico para el ícono flotante */
+.carrito-flotante {
+    position: relative;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero {
+        padding: 50px 0;
+        padding-top: 80px;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .productos .card {
+        margin-bottom: 20px;
+    }
+
+    .infoContacto {
+        display: flex;
+        justify-content: baseline;
+        margin-top: 10px;
+    }
+}
